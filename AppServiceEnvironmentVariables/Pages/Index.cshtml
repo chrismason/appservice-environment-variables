@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "App Settings Environment Variables";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Sample App Settings</h1>
+        <ul>
+            <li>Website Name: @(System.Environment.GetEnvironmentVariable("WEBSITE_SITE_NAME", EnvironmentVariableTarget.Process)</li>
+        </ul>
+    </div>
+</div>
